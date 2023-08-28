@@ -1,93 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diablo II Myth 2</title>
+    <meta http-equiv="refresh" content="0; url=/Myth-2/Documentation/index" />
   </head>
   <body>
-    <style>
-      html,
-      body {
-        background-color: black;
-        color: white;
-      }
-
-      #navContainer {
-        max-height: 250px;
-      }
-
-      #navContainer a {
-        border: 1px solid grey;
-        color: white;
-        display: inline-block;
-        margin-left: 2px;
-        height: 20px;
-        padding: 6px 3px;
-      }
-    </style>
-
-    <div id="navContainer" style="display: flex">
-      <img
-        src="/Myth-2/logo.jpg"
-        alt="logo"
-        style="height: 70px; margin-right: 20px"
-      />
-      <div style="display: flex; flex-wrap: wrap">
-        <a href="#" onclick="goTo('_1_part_1.html')">Part I</a>
-        <a href="#" onclick="goTo('_2_part_2.html')">Part II</a>
-        <a href="#" onclick="goTo('_3_part_3.html')">Part III</a>
-        <a href="#" onclick="goTo('_changed_skills.html')">Changed Skills</a>
-        <a href="#" onclick="goTo('_cube_recipes.html')">Cube Recipes</a>
-        <a href="#" onclick="goTo('_gems_runes.html')">Gems & Runes</a>
-        <a href="#" onclick="goTo('_goblins.html')">Goblins</a>
-        <a href="#" onclick="goTo('_mercenaries.html')">Mercenaries</a>
-        <a href="#" onclick="goTo('_new_monsters.html')">New Monsters</a>
-        <a href="#" onclick="goTo('_new_skills.html')">New Skills</a>
-        <a href="#" onclick="goTo('_new_super_unique_monsters.html')"
-          >Unique Monsters</a
-        >
-        <a href="#" onclick="goTo('_uber_items.html')">Uber Items</a>
-        <a href="#" onclick="goTo('_uber_levels.html')">Uber Levels</a>
-        <a href="#" onclick="goTo('_weapons_and_armor.html')"
-          >Weapons & Armor</a
-        >
-        <a href="#" onclick="goTo('_words.html')">Words</a>
-        <a href="#" onclick="goTo('_challenges.html')">Challenges</a>
-      </div>
-    </div>
-    <hr />
-
-    <div id="iframeContainer">
-      <iframe
-        src="/Myth-2/Documentation/_1_part_1.html"
-        id="mainIframe"
-        frameborder="position: absolute; bottom: 0px; width: 99vw;"
-      ></iframe>
-    </div>
-
-    <script>
-      const docsPath = "/Myth-2/Documentation/";
-      let currentPage = "";
-      goTo("_1_part_1.html");
-
-      window.addEventListener(
-        "resize",
-        function (event) {
-          goTo(currentPage);
-        },
-        true
-      );
-
-      function goTo(htmlFileName) {
-        currentPage = htmlFileName;
-        window.mainIframe.src = "";
-        const navBoundingRect = window.navContainer.getBoundingClientRect();
-        const nHeight = Math.floor(navBoundingRect.height + 20);
-        console.log({ nHeight });
-        window.mainIframe.src = docsPath + htmlFileName;
-        window.mainIframe.style = `position:absolute;bottom:0px;width:99vw;height:calc(100vh - ${nHeight}px);`;
-      }
-    </script>
+    <p><a href="/Myth-2/Documentation/index">Redirect to documentation</a></p>
   </body>
 </html>
