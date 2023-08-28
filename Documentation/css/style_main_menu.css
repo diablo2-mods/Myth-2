@@ -1,0 +1,55 @@
+/* Stylesheet 1 -------------------------------*/
+BODY {
+margin: 0;
+padding: 0;
+margin-top: 0px;
+font: Time New Roman;
+background-color:#000000;
+color: #dbdbdb;
+}
+
+A {
+color: #32CD32;
+text-decoration: none;
+}
+A:visited {
+color: #32CD32;
+}
+A:hover {
+color: #ADFF2F;
+text-decoration: none;
+}
+
+#ctrntop {
+margin:0px 1px;
+padding:0px 0px;
+background:url(../Images/buttons_bg.gif);
+text-align:center;
+vertical-align: center;
+list-style:none;
+white-space:nowrap;
+}
+#ctrntop a{
+background:url(../Images/1.jpg) repeat-x;
+width: 180;
+height:18px;
+display:inline-block;
+border:#0057F4 0px solid;
+margin-left:0px;
+padding-top: 2px;
+text-decoration:none;
+font-size:12px;
+color:#E4E4E4;
+vertical-align: center;
+}
+#ctrntop a:hover {
+font-size:12px;
+color:#ff9900;
+background-position:0
+bottom;
+}
+
+
+/* Holly Hack for IE \*/
+* html #ctrntop a { margin:0px 0px; height:20px;}
+/* End */
